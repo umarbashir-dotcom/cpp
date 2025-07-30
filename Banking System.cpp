@@ -9,7 +9,7 @@ void showMenu(){
 		<<"5. Withdraw Money\n"
 		<<"6. Modify Account\n"
 		<<"7. Delete Account\n"
-		<<"8. Exit\n";		
+		<<"8. Exit\n";	
 }
 void createAccount(string names[],string type[],int number[],double balance[],int & count){
 	cout<<"*Please Enter the Following Details to create new account:-\n";
