@@ -1,7 +1,7 @@
 //						*****Our Project (BANKING SYSTEM) in Structured Programming.
 #include <iostream>
 using namespace std;
-void showMenu(){
+void showMenu(){ 
 	cout<<"1. Create New Account\n"
 		<<"2. Display All Accounts\n"
 		<<"3. Search Account\n"
