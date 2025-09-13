@@ -249,6 +249,7 @@ void deleteAccount(string names[],string type[],int number[],double balance[],in
 	}
 	
 }
+
 int main(){
 	cout<<"**** BANKING SYSTEM ****\n";
 	const int maxAccounts=100;
@@ -266,39 +267,48 @@ int main(){
 		cin.ignore();
 		switch (choice){
 			case 1:{
+				// Create account 
 				createAccount(names,accountType,accountNumbers,balance,count);
 				break;
 			}
 			case 2:{
+				// Display all Accounts
 				displayAccounts(names,accountType,accountNumbers,balance,count);
 				break;
 			}
 			case 3:{
+				// Search account
 				searchAccount(names,accountType,accountNumbers,balance,count);
 				break;
 			}
 			case 4:{
+				// Deposit Money
 				depositMoney(accountNumbers,balance ,count);
 				break;
 			}
 			case 5:{
+				// Withdraw Money
 				withdrawMoney(accountNumbers,balance,count);
 				break;
 			}
 			case 6:{
+				// Modify the account
 				modifyAccount(names,accountType,accountNumbers,count);
 				break;
 			}
 			case 7:{
+				// Delete the account
 				deleteAccount(names,accountType,accountNumbers,balance,count);
 				break;
 			}
 			case 8:{
+				// Exit 
 				cout<<" ------------EXITING THE PROGRAM-------------\n";
 				exit(0);
 				break;
 			}
 			default:
+			    // Handle invalid input
 				cout<<"Invaid Input!Please See MENU with open eyes ** \n";
 		}	
 	}
